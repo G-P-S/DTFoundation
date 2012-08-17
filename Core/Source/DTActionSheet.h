@@ -44,6 +44,6 @@ typedef void (^DTActionSheetBlock)(void);
  @param title The title of the new button.
  @returns The index of the new button. Button indices start at 0 and increase in the order they are added.
  */ 
-- (NSInteger)addCancelButtonWithTitle:(NSString *)title;
+- (NSInteger)addCancelButtonWithTitle:(NSString *)title block:(DTActionSheetBlock)block;
 
 @end
